@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#BF4A8C</color>
+    <color name="colorPrimaryDark">#B12875</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- Custom Color   -->
+    <color name="purple">#BF4A8C</color>
+    <color name="white">#FFFFFF</color>
+</resources>
