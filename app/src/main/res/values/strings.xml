@@ -9,5 +9,10 @@
 
     <!-- Home activity String  -->
     <string name="remember_title">Remember me about</string>
+    <string name="remember_01">This reminder is about buying fish form Shopnow
+        This reminder is about buying fish form Shopno</string>
+    <string name="remember_arrival">Arrival</string>
+    <string name="remember_location">Shyamoli, Adabor</string>
+    <string name="remember_distance">300 ft</string>
 
 </resources>
