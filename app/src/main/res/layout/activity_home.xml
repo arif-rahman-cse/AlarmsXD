@@ -9,7 +9,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/toolbar"
@@ -44,22 +44,30 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/toolbar"
             android:layout_margin="20dp"
-            tools:listitem="@layout/alarm_item_view"
             android:clipToPadding="false"
-            android:paddingBottom="60dp"/>
+            android:paddingBottom="60dp"
+            tools:listitem="@layout/alarm_item_view" />
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+
+            <include layout="@layout/drawer_view" />
+
+        </com.google.android.material.navigation.NavigationView>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
             android:layout_margin="16dp"
-            android:src="@drawable/ic_alarm_add"
-            android:backgroundTint="@color/purple"/>
+            android:backgroundTint="@color/purple"
+            android:src="@drawable/ic_alarm_add" />
 
     </RelativeLayout>
-
-
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

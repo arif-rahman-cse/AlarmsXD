@@ -15,4 +15,10 @@
     <string name="remember_location">Shyamoli, Adabor</string>
     <string name="remember_distance">300 ft</string>
 
+    <!--    Navigation drawer String -->
+    <string name="all_reminder">All Reminders</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="log_out">Logout </string>
+
 </resources>
