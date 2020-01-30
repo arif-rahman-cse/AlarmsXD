@@ -1,4 +1,4 @@
-package com.smarifrahman.alarmsxd;
+package com.smarifrahman.alarmsxd.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import com.smarifrahman.alarmsxd.R;
+import com.smarifrahman.alarmsxd.RegistrationActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
 
         registrationButton = findViewById(R.id.login_tv);
