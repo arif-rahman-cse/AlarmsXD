@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.smarifrahman.alarmsxd.R;
-import com.smarifrahman.alarmsxd.RegistrationActivity;
 
 public class MainActivity extends AppCompatActivity {
 

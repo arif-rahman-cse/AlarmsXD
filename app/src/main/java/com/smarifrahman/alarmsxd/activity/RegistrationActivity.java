@@ -1,4 +1,4 @@
-package com.smarifrahman.alarmsxd;
+package com.smarifrahman.alarmsxd.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.smarifrahman.alarmsxd.activity.HomeActivity;
+import com.smarifrahman.alarmsxd.R;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
