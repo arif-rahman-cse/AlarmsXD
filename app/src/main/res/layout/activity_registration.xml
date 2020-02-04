@@ -129,7 +129,7 @@
                 android:background="?android:selectableItemBackgroundBorderless"
                 android:clickable="true"
                 android:focusable="true"
-                android:src="@drawable/ic_arrow_back"
+                android:src="@drawable/ic_left_black"
                 app:civ_circle_background_color="@color/purple" />
 
 
@@ -142,7 +142,7 @@
                 android:background="?android:selectableItemBackgroundBorderless"
                 android:clickable="true"
                 android:focusable="true"
-                android:src="@drawable/ic_arrow_right"
+                android:src="@drawable/ic_right_black"
                 app:civ_circle_background_color="@color/purple" />
 
         </RelativeLayout>

@@ -83,7 +83,7 @@
             android:layout_height="50dp"
             android:layout_gravity="end"
             android:layout_marginTop="8dp"
-            android:src="@drawable/ic_arrow_right"
+            android:src="@drawable/ic_right_black"
             app:civ_circle_background_color="@color/purple"
             android:background="?android:selectableItemBackgroundBorderless"
             android:clickable="true"

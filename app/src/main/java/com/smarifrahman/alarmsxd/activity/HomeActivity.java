@@ -1,21 +1,25 @@
 package com.smarifrahman.alarmsxd.activity;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 
+import com.google.android.material.navigation.NavigationView;
 import com.smarifrahman.alarmsxd.R;
 import com.smarifrahman.alarmsxd.adapter.AlarmAdapter;
 import com.smarifrahman.alarmsxd.databinding.ActivityHomeBinding;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
+public class HomeActivity extends AppCompatActivity implements View.OnClickListener, NavigationView.OnNavigationItemSelectedListener {
 
     ActivityHomeBinding mHomeBinding;
 
@@ -33,6 +37,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         mHomeBinding.alarmRecyclerView.setAdapter(adapter);
 
         mHomeBinding.addReminderFcb.setOnClickListener(this);
+        mHomeBinding.drawerMenu.setOnClickListener(this);
+        mHomeBinding.navViewId.setNavigationItemSelectedListener(this);
+
 
     }
 
@@ -45,8 +52,32 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(HomeActivity.this, AddReminderActivity.class));
                 finish();
                 break;
+
+            case R.id.drawer_menu:
+                mHomeBinding.drawerLayout.openDrawer(GravityCompat.START);
+                break;
+
         }
 
+    }
 
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        int id = menuItem.getItemId();
+
+        switch (id) {
+            case R.id.setting_id:
+                return true;
+
+            case R.id.login_id:
+                return true;
+
+            case R.id.about_id:
+                startActivity(new Intent(HomeActivity.this, AboutReminderXD.class));
+                finish();
+                return true;
+        }
+        return false;
     }
 }
