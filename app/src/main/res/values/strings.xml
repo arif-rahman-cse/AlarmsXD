@@ -24,4 +24,28 @@
     <string name="about">About</string>
     <string name="log_out">Logout </string>
 
+    <!--Add Reminder String  -->
+    <string name="add_reminder">Add Reminder</string>
+    <string name="arrival">Arrival</string>
+    <string name="departure">Departure</string>
+    <string name="remind_me_about">Remind me about</string>
+    <string name="add_note">Add note</string>
+    <string name="select_location">Select Location</string>
+    <string name="reminder_range">Reminder Range</string>
+    <string name="reminder_range_length">500</string>
+    <string name="unique">Ft</string>
+    <string name="attachment">Attachment</string>
+    <string name="schedule">Schedule</string>
+    <string name="ring_alarm">Ring Alarm</string>
+    <string name="repeat">Repeat</string>
+    <string name="date_interval">Date Interval</string>
+    <string name="start_from">Start From</string>
+    <string name="today">Today</string>
+    <string name="no_date_line">No Dateline</string>
+    <string name="expires_on">Expires From</string>
+    <string name="done">Done</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
