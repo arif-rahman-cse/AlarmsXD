@@ -44,6 +44,8 @@
     <string name="no_date_line">No Dateline</string>
     <string name="expires_on">Expires From</string>
     <string name="done">Done</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
 
     <!--    About ReminderXD String-->
     <string name="version">Version 1.0.0</string>
