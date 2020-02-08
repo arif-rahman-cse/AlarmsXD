@@ -68,6 +68,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (id) {
             case R.id.setting_id:
+                startActivity(new Intent(HomeActivity.this, SettingActivity.class));
+                finish();
                 return true;
 
             case R.id.login_id:

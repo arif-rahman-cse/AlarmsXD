@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.SettingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/toolbar_title"
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/settings"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:id="@+id/setting_back_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/settings"
+                        android:src="@drawable/ic_left_black" />
+
+                </androidx.appcompat.widget.Toolbar>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <LinearLayout
+                android:id="@+id/general"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/general"
+                    android:textColor="@color/purple"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:id="@+id/units"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/units_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="22dp"
+                        android:contentDescription="@string/power_saver_mode"
+                        android:src="@drawable/ic_unites" />
+
+                    <TextView
+                        android:id="@+id/units_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/units_icon"
+                        android:drawablePadding="22dp"
+                        android:text="@string/units"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/units_tv"
+                        android:layout_toEndOf="@id/units_icon"
+                        android:text="@string/imperial" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/default_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/default_distance_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="22dp"
+                        android:contentDescription="@string/default_distance"
+                        android:src="@drawable/ic_default_distance" />
+
+                    <TextView
+                        android:id="@+id/default_distance_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/default_distance_icon"
+                        android:drawablePadding="22dp"
+                        android:text="@string/default_distance"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/default_distance_tv"
+                        android:layout_toEndOf="@id/default_distance_icon"
+                        android:text="@string/default_units" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/power_saver_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/power_saver_mode_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="22dp"
+                        android:contentDescription="@string/power_saver_mode"
+                        android:src="@drawable/ic_battery" />
+
+                    <TextView
+                        android:id="@+id/power_saver_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/power_saver_mode_icon"
+                        android:drawablePadding="22dp"
+                        android:text="@string/power_saver_mode"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/power_saver_hint_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/power_saver_tv"
+                        android:layout_toEndOf="@id/power_saver_mode_icon"
+                        android:text="@string/power_saver_hint" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/power_saver_mode_on_off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:checked="true" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/purple" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/alarms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/alarms"
+                    android:textColor="@color/purple"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:id="@+id/alarm_tone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/alarm_tone_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="22dp"
+                        android:contentDescription="@string/alarm_tone"
+                        android:src="@drawable/ic_alarm_tone" />
+
+                    <TextView
+                        android:id="@+id/units_tone_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/alarm_tone_icon"
+                        android:drawablePadding="22dp"
+                        android:text="@string/units"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/units_tone_tv"
+                        android:layout_toEndOf="@id/alarm_tone_icon"
+                        android:text="@string/alarm_tone_name" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/vibration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/vibration_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="22dp"
+                        android:contentDescription="@string/vibration"
+                        android:src="@drawable/ic_vibration" />
+
+                    <TextView
+                        android:id="@+id/vibration_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/vibration_icon"
+                        android:drawablePadding="22dp"
+                        android:text="@string/vibration"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/vibration_tv"
+                        android:layout_toEndOf="@id/vibration_icon"
+                        android:text="@string/vibration_hint" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/voice_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/voice_alert_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="22dp"
+                        android:contentDescription="@string/voice_alert"
+                        android:src="@drawable/ic_voice_alert" />
+
+                    <TextView
+                        android:id="@+id/voice_alert_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/voice_alert_icon"
+                        android:drawablePadding="22dp"
+                        android:text="@string/voice_alert"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/voice_alert_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/voice_alert_tv"
+                        android:layout_toEndOf="@id/voice_alert_icon"
+                        android:text="@string/power_saver_hint" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/voice_alert_on_off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:checked="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/snooze"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/snooze_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="22dp"
+                        android:contentDescription="@string/snooze_time"
+                        android:src="@drawable/ic_snooze" />
+
+                    <TextView
+                        android:id="@+id/snooze_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/snooze_icon"
+                        android:drawablePadding="22dp"
+                        android:text="@string/voice_alert"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/snooze_tv"
+                        android:layout_toEndOf="@id/snooze_icon"
+                        android:text="@string/snooze_time_hint" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

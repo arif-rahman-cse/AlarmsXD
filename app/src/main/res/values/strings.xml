@@ -53,4 +53,24 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <!--    Setting Activity String -->
+
+    <string name="general">General</string>
+    <string name="imperial">Imperial (ft/feet)</string>
+    <string name="default_distance">Default Distance</string>
+    <string name="units">Units</string>
+    <string name="default_units">500 units</string>
+    <string name="power_saver_mode">Power Saver Mode</string>
+    <string name="power_saver_hint">Uses cellular network for
+    reduced battery consumption. Turn on might lower the accuracy</string>
+    <string name="alarms">Alarms</string>
+    <string name="alarm_tone">Alarm Tone</string>
+    <string name="alarm_tone_name">Game of Thrones</string>
+    <string name="vibration">Vibration</string>
+    <string name="vibration_hint">Until alarm is dismissed</string>
+    <string name="voice_alert">Voice Alert</string>
+    <string name="voice_alert_hint">App announcing the task details</string>
+    <string name="snooze_time">Snooze Time</string>
+    <string name="snooze_time_hint">3 minutes</string>
+
 </resources>
